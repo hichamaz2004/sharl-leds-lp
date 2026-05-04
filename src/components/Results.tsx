@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SectionProps } from '../App';
 
+const base = import.meta.env.BASE_URL;
 const screenshots = [
-  { src: '/screenshots/screen%20(1).png',  platform: 'Meta Ads Manager',   metric: 'ROAS 4.7x' },
-  { src: '/screenshots/screen%20(2).png',  platform: 'Meta Ads Manager',  metric: 'CPA -62%'  },
-  { src: '/screenshots/screen%20(3).png',  platform: 'Meta Ads Manager',  metric: 'Revenue x3'},
-  { src: '/screenshots/screen%20(4).png',  platform: 'Meta Ads Manager',   metric: '+340%'     },
-  { src: '/screenshots/screen%20(6).png',  platform: 'Meta Ads Manager',   metric: '+580%'     },
-  { src: '/screenshots/screen%20(5).png', platform: 'Meta Ads Manager',  metric: '+900%'     },
+  { src: `${base}screenshots/screen (1).png`,  platform: 'Meta Ads Manager',  metric: 'ROAS 4.7x' },
+  { src: `${base}screenshots/screen (2).png`,  platform: 'Meta Ads Manager',  metric: 'CPA -62%'  },
+  { src: `${base}screenshots/screen (3).png`,  platform: 'Meta Ads Manager',  metric: 'Revenue x3'},
+  { src: `${base}screenshots/screen (4).png`,  platform: 'Meta Ads Manager',  metric: '+340%'     },
+  { src: `${base}screenshots/screen (6).png`,  platform: 'Meta Ads Manager',  metric: '+580%'     },
+  { src: `${base}screenshots/screen (5).png`,  platform: 'Meta Ads Manager',  metric: '+900%'     },
 ];
 
 const N = screenshots.length;

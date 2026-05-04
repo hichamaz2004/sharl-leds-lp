@@ -1,16 +1,17 @@
 import { motion } from 'framer-motion';
 import { SectionProps } from '../App';
 
+const base = import.meta.env.BASE_URL;
 const logos = [
-  { name: 'Client 1', src: '/logos/logo (8).png' },
-  { name: 'Client 2', src: '/logos/logo (9).png' },
-  { name: 'Client 3', src: '/logos/logo (10).png' },
-  { name: 'Client 4', src: '/logos/logo (11).png' },
-  { name: 'Client 5', src: '/logos/logo (12).png' },
-  { name: 'Client 6', src: '/logos/logo (13).png' },
-  { name: 'Client 7', src: '/logos/logo (14).png' },
-  { name: 'Client 8', src: '/logos/logo (15).png' },
-  { name: 'Client 9', src: '/logos/logo (16).png' },
+  { name: 'Client 1', src: `${base}logos/logo (8).png` },
+  { name: 'Client 2', src: `${base}logos/logo (9).png` },
+  { name: 'Client 3', src: `${base}logos/logo (10).png` },
+  { name: 'Client 4', src: `${base}logos/logo (11).png` },
+  { name: 'Client 5', src: `${base}logos/logo (12).png` },
+  { name: 'Client 6', src: `${base}logos/logo (13).png` },
+  { name: 'Client 7', src: `${base}logos/logo (14).png` },
+  { name: 'Client 8', src: `${base}logos/logo (15).png` },
+  { name: 'Client 9', src: `${base}logos/logo (16).png` },
 ];
 
 const track = [...logos, ...logos, ...logos, ...logos];
